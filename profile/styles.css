@@ -1,0 +1,201 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    background: seashell;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+body.dark-mode .container {
+    background: #2a2a2a;
+}
+
+/* Profile Picture */
+.profile-picc {
+    /* display: block; */
+    margin: 0 auto 15px;
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    /* border: 4px solid #007bff; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+/* .profile-picc:hover {
+    transform: scale(1.05);
+} */
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+body.dark-mode h1 {
+    color: #f4f4f4;
+}
+img{
+    width: 100px;
+}
+
+header p {
+    font-size: 15px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+body.dark-mode header p {
+    color: #ddd;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 22px;
+    color: #007bff;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 8px;
+    margin-top: 25px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+body.dark-mode h2 {
+    border-color: #444;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
+}
+
+ul li:hover {
+    background: #e3f2fd;
+}
+
+body.dark-mode ul li:hover {
+    background: #333;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+body.dark-mode a {
+    color: #4da6ff;
+}
+
+body.dark-mode a:hover {
+    color: #80bfff;
+}
+
+/* Download Button */
+.download-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
